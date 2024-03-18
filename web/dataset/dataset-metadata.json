@@ -1,0 +1,37 @@
+{
+  "id": "mrmody476/vitonhdmody",
+  "id_no": 4439516,
+  "datasetSlugNullable": "vitonhdmody",
+  "ownerUserNullable": "mrmody476",
+  "usabilityRatingNullable": 0.125,
+  "titleNullable": "vitonhdmody",
+  "subtitleNullable": "",
+  "descriptionNullable": "",
+  "datasetId": 4439516,
+  "datasetSlug": "vitonhdmody",
+  "hasDatasetSlug": true,
+  "ownerUser": "mrmody476",
+  "hasOwnerUser": true,
+  "usabilityRating": 0.125,
+  "hasUsabilityRating": true,
+  "totalViews": 12,
+  "totalVotes": 1,
+  "totalDownloads": 5,
+  "title": "vitonhdmody",
+  "hasTitle": true,
+  "subtitle": "",
+  "hasSubtitle": true,
+  "description": "",
+  "hasDescription": true,
+  "isPrivate": true,
+  "keywords": [],
+  "licenses": [
+    {
+      "nameNullable": "unknown",
+      "name": "unknown",
+      "hasName": true
+    }
+  ],
+  "collaborators": [],
+  "data": []
+}
