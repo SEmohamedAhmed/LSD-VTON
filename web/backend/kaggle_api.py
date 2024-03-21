@@ -2,6 +2,7 @@ import subprocess
 import kaggle
 
 project_path = r' D:\Mohamed\FCIS\4th\GP\VITON\VITONY'
+notebook_id = 'mrmody476/isthisgppretrained-gp-vton'
 
 
 def execute_cmd_command(command):
@@ -11,7 +12,7 @@ def execute_cmd_command(command):
     return result.stdout
 
 
-def pull_dataset(dataset_id):
+def pull_kaggle_dataset(dataset_id):
     command = fr'kaggle datasets metadata -p {project_path}\web\dataset {dataset_id}'
     return execute_cmd_command(command)
 
@@ -23,7 +24,7 @@ def update_kaggle_dataset():
     return execute_cmd_command(command)
 
 
-def pull_notebook(notebook_id):
+def pull_kaggle_notebook():
     command = fr'kaggle kernels pull -m {notebook_id} -p {project_path}\web\notebook'
     return execute_cmd_command(command)
 
@@ -38,14 +39,13 @@ def run_kaggle_notebook():
     return execute_cmd_command(command)
 
 
-def get_kaggle_notebook_status(notebook_id):
+def get_kaggle_notebook_status():
     # We need "complete" status to retrieve our target output
     command = f'kaggle kernels status {notebook_id}'
     return execute_cmd_command(command)
 
 
-def get_kaggle_notebook_output(notebook_id):
+def get_kaggle_notebook_output():
     command = fr'kaggle kernels output {notebook_id} -p {project_path}\web\notebook_output'
     return execute_cmd_command(command)
-
 

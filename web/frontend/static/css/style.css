@@ -1,0 +1,102 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    color: #0056b3;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.row {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card {
+
+    flex:auto;
+    background-color: #ffffff;
+    border: 1px solid #d3d3d3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+    height: auto;
+
+    object-fit: cover;
+}
+
+.card-body {
+    color: #333;
+}
+
+.select-button, button {
+    background-color: #17a2b8;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.select-button:hover, button:hover {
+    background-color: #138496;
+    transform: scale(1.05);
+}
+
+.big-frame {
+    border: 3px solid #17a2b8;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.big-frame img {
+    max-height: 400px;
+    width: auto;
+    max-width: 100%;
+}
+
+/* Input Field Styling */
+input[type="file"] {
+    margin-top: 20px;
+    border: 1px solid #d3d3d3;
+    background-color: #ececec;
+    color: #333;
+    padding: 10px;
+}
+
+button {
+    background-color: #ff6b6b;
+    font-weight: 600;
+}

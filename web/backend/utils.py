@@ -1,7 +1,9 @@
 import os
 import shutil
+import json
 
-main_dataset_path = r'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\dataset'
+
+main_dataset_path = r'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\dataset\test'
 
 
 def delete_files_in_folder(folder_path):
@@ -21,7 +23,7 @@ def delete_files_in_folder(folder_path):
 
 def make_dataset(person_id, cloth_id):
     """
-        we assume we cleared last dataset images using delete_files_in_folder function
+        clear last dataset
         we need to
             - have a dataset of 1 row only which is the target one
             - fill all folders based on current ids
@@ -34,6 +36,7 @@ def make_dataset(person_id, cloth_id):
                 parse
             - create a txt file hase 'pid cid upper'
     """
+    delete_files_in_folder(main_dataset_path)
     test_path = r'D:\Mohamed\FCIS\4th\GP\VITON\Dataset\VITON-HD[DO NOT EDIT]\test'
     CLOTH_LABELS = ['cloth', 'cloth_mask', 'cloth_parse']
     PERSON_LABELS = ['image', 'dense', 'parse']
@@ -48,9 +51,37 @@ def make_dataset(person_id, cloth_id):
     shutil.copy(fr'{test_path}\openpose_json\{person_id}_keypoints.json',
                 fr'{main_dataset_path}\openpose_json\{person_id}_keypoints.json')
 
-    path = r'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\requirements.txt'
-    with open(path, 'w') as file_writer:
+    path = r'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\dataset\inference.txt'
+    with open(path, 'w', encoding='utf-8') as file_writer:
         file_writer.write(f'{person_id}.png {cloth_id}.png upper')
+
+
+def remove_file_extension(filename):
+    """
+    Removes the file extension from the given filename.
+
+    Parameters:
+    filename (str): The filename from which to remove the extension.
+
+    Returns:
+    str: The filename without the extension.
+    """
+    # Split the filename into the name and the extension
+    name, _ = os.path.splitext(filename)
+    return name
+
+
+def edit_json_file(json_file_path, key, new_value):
+    # Load the JSON data from a file
+    with open(json_file_path, 'r') as file:
+        data = json.load(file)
+
+    # Change the 'enable_gpu' value to true
+    data[key] = new_value
+
+    # Write the modified data back to the file
+    with open(json_file_path, 'w') as file:
+        json.dump(data, file, indent=2)
 
 
 delete_files_in_folder(main_dataset_path)

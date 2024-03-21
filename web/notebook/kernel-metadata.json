@@ -1,0 +1,23 @@
+{
+  "id": "mrmody476/isthisgppretrained-gp-vton",
+  "id_no": 50879089,
+  "title": "IsThisGPPretrained_GP_VTON",
+  "code_file": "isthisgppretrained-gp-vton.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "keywords": [
+    "deep learning",
+    "gpu"
+  ],
+  "dataset_sources": [
+    "zenbot99/gp-vton-dataset",
+    "mrmody476/vitonhdmody"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "model_sources": []
+}
