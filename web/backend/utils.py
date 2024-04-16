@@ -2,6 +2,7 @@ import os
 import shutil
 import json
 
+from PIL import Image
 
 main_dataset_path = r'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\dataset\test'
 
@@ -84,4 +85,9 @@ def edit_json_file(json_file_path, key, new_value):
         json.dump(data, file, indent=2)
 
 
-delete_files_in_folder(main_dataset_path)
+def crop_image(input_image_path, output_image_path, left=0, top=0, right=384, bottom=512):
+    with Image.open(input_image_path) as img:
+        # Crop the image
+        cropped_img = img.crop((top, left, right, bottom))
+        # Save the cropped image
+        cropped_img.save(output_image_path)

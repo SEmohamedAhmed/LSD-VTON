@@ -1,21 +1,20 @@
 {
-  "id": "mrmody476/isthisgppretrained-gp-vton",
-  "id_no": 50879089,
-  "title": "IsThisGPPretrained_GP_VTON",
+  "id": "mrmody476/huntingdenosingunet",
+  "id_no": 53264964,
+  "title": "HuntingDenosingUnet",
   "code_file": "isthisgppretrained-gp-vton.ipynb",
   "language": "python",
   "kernel_type": "notebook",
   "is_private": true,
-  "enable_gpu": true,
+  "enable_gpu": false,
   "enable_tpu": false,
-  "enable_internet": true,
+  "enable_internet": false,
   "keywords": [
-    "deep learning",
     "gpu"
   ],
   "dataset_sources": [
-    "zenbot99/gp-vton-dataset",
-    "mrmody476/vitonhdmody"
+    "marquis03/high-resolution-viton-zalando-dataset",
+    "mrmody476/warping-results-mody-contribution"
   ],
   "kernel_sources": [],
   "competition_sources": [],
