@@ -27,6 +27,6 @@ Developed and maintained By (Order Does not matter):
 [Click Here for the demo](https://drive.google.com/file/d/1UZuarGgWUsnE3_fvW8du39U0Rbuy5FyX/view?usp=sharing)
 
 ## Acknowledgments
-Thanks for all autohrs of 
+Thanks for all authors of 
 - [GP-VTON](https://github.com/xiezhy6/GP-VTON)
 - [LaDi-VTON](https://github.com/miccunifi/ladi-vton/tree/master)
