@@ -17,3 +17,14 @@
 
 ###############
 
+# Step 1: Open the original file
+with open(r"C:\Users\Mr.MohamedAhmed\Desktop\test_pairs.txt", 'r') as original_file:
+    # Step 2: Open a new file for writing
+    with open(r"C:\Users\Mr.MohamedAhmed\Desktop\test_pairskoky.txt", 'w') as modified_file:
+        # Step 3: Read and modify each line
+        for line in original_file:
+            # Replace '.jpg' with '.png' and append 'upper'
+            modified_line = line.replace('.jpg', '.png')[:-1] + ' upper\n'
+            # Step 4: Write the modified line to the new file
+            modified_file.write(modified_line)
+            # Step 5: Close both files (not necessary here as 'with' statement handles it)

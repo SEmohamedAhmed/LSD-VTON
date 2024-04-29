@@ -42,14 +42,20 @@ def tryon(person_id, cloth_id):
     # get tryon result (notebook output)
     get_kaggle_notebook_output(r'mrmody476/isthisgppretrained-gp-vton')
 
+    clear_folder(r'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\frontend\static\tryon_results')
+
     # copy our result into tryon_results directory
     shutil.copy(fr'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\notebook_output\{person_id}.png___{cloth_id}.png',
-                fr'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\frontend\static\tryon_results\{person_id}___{cloth_id}.png')
+                fr'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\frontend\static\tryon_results\tryon.png')
 
     return person_id, cloth_id
 
 
 def mody_vton(person_id, cloth_id):
+    lfgp_result_path = r'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\mody_contribution_dataset\lfgp_warping_result.jpg'
+    if os.path.exists(lfgp_result_path):
+        os.remove(lfgp_result_path)
+
     os.rename(fr'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\notebook_output\upper___{person_id}___{cloth_id}',
               r'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\mody_contribution_dataset\lfgp_warping_result.jpg')
 
@@ -57,7 +63,9 @@ def mody_vton(person_id, cloth_id):
                r'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\mody_contribution_dataset\lfgp_warping_result.jpg')
 
     with open(r'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\mody_contribution_dataset\testContribution.txt', 'w') as f:
-        f.write(f'{person_id} {cloth_id}')
+        pid = person_id.replace('png', 'jpg')
+        cid = cloth_id.replace('png', 'jpg')
+        f.write(f'{pid} {cid}')
 
     # update the dataset mody_contribution_dataset
     pull_kaggle_dataset(r'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\mody_contribution_dataset',
@@ -88,6 +96,11 @@ def mody_vton(person_id, cloth_id):
     # get tryon result (notebook output)
     get_kaggle_notebook_output(r'mrmody476/huntingdenosingunet')
 
+    time.sleep(60)
+
+    clear_folder(r'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\frontend\static\tryon_results')
+
     # copy our result into tryon_results directory
-    shutil.copy(fr'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\notebook_output\unpaired\upper_body\{person_id}.png',
-                fr'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\frontend\static\tryon_results\{person_id}___{cloth_id}___mody_vton.png')
+    shutil.copy(fr'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\notebook_output\unpaired\upper_body\{person_id}',
+                fr'D:\Mohamed\FCIS\4th\GP\VITON\VITONY\web\frontend\static\tryon_results\tryon.png')
+

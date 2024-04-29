@@ -22,6 +22,20 @@ def delete_files_in_folder(folder_path):
             delete_files_in_folder(item_path)
 
 
+def clear_folder(folder_path):
+    # Check if the folder exists
+    if os.path.exists(folder_path):
+        # Iterate over the files in the folder and remove them
+        for file_name in os.listdir(folder_path):
+            file_path = os.path.join(folder_path, file_name)
+            # Check if the file is a regular file (not a subfolder)
+            if os.path.isfile(file_path):
+                os.remove(file_path)
+        print(f"Folder '{folder_path}' has been cleared.")
+    else:
+        print(f"Folder '{folder_path}' does not exist.")
+
+
 def make_dataset(person_id, cloth_id):
     """
         clear last dataset

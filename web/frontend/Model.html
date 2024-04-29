@@ -1,39 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head >
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="/static/css/style.css">
-    </head>
-    <body>
-        <div class="title-bar">
-            <h1>Virtual Try On</h1>
-        </div>
-        <div class="container my-5">
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <text>Selected Garment</text>
-                    <img id="chosenGarment" src="path_to_chosen_garment.jpg" alt="Chosen Garment" class="img-fluid">
-                </div>
-                <div class="col-12 col-md-6">
-                    <text>Your Picture</text>
-                    <input type="file" class="form-control" id="imageInput" accept="image/*">
-                </div>
-                <div class="col-12 text-center mt-3">
-                    <button class="btn btn-primary"  id="tryOnButton">Try On</button>
-                </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Virtual Try On</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+    </nav>
+    <section class="fashion-section">
+        <img src="static/clothes_samples/fashion.jpg" alt="Fashion Image">
+        <div class="title-text">
+            <div class="headline_div">
+            <p id="text_model">Try On Your Garments</p>
             </div>
-         
-            <div class="row">
+        </div>
+    </section>
+    <div class="container my-5">
+        <div class="row">
+            <!-- Selected Garment Section -->
+            <div class="col-12 col-md-6">
+                <h2>Selected Garment</h2>
+                <img id="chosenGarment" src="path_to_chosen_garment.jpg" alt="Chosen Garment" class="img-fluid">
+            </div>
+
+            <!-- Your Picture Section -->
+            <div class="col-12 col-md-6">
+                <h2>Your Picture</h2>
+                <input type="file" class="form-control" id="imageInput" accept="image/*">
+                <img id="user_picture" src="static/clothes_samples/empty_picture.jpg" alt="Your Picture" class="img-fluid">
+            </div>
+        </div>
+        
+        <!-- Try On Button -->
+        <div class="row mt-3">
+            <div class="col-12 text-center">
+                <button id="tryOnButton" class="select-button">Try On</button>
+            </div>
+        </div>
+        
+        <!-- Predicted Image Section -->
+        <!-- <div class="row mt-5">
+            <div class="col-12">
+                <h2>Predicted Image</h2>
                 <div class="big-frame">
-                    <img src="static/clothes_samples/unknown_result.png" class="card-img-top" id="predictedImage" alt="...">
+                    <img src="C:\applicationGraduationProject\garments_photos\testImage.jpg" class="card-img-top" id="predictedImage" alt="...">
                 </div>
-            
             </div>
+        </div> -->
+    </div>
+    <footer class="footer">
+        <div>
+            <p>Contact Us: support@virtualtryon.com</p>
+            <p>Follow us on social media: 
+                <a href="#">Facebook</a> | 
+                <a href="#">Twitter</a> | 
+                <a href="#">Instagram</a>
+            </p>
         </div>
-        <script src="/static/js/model_script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    </body>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="static/js/script_model.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
 </html>

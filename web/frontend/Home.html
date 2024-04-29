@@ -4,57 +4,40 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="static/css/style.css">
     </head>
     <body>
-        <div class="title-bar">
-            <h1>Virtual Try On</h1>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-6 col-lg-4"> 
-                    <div class="card">
-                        <img src="/static/clothes_samples/00017_00.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">Sfffome quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <button class="select-button" data-src="/static/clothes_samples/00017_00.png">Try</button>
-                        </div>
-                       
-                      </div>
-                </div>
-                <div class="col-6 col-lg-4"> 
-                    <div class="card">
-                        <img src="/static/clothes_samples/00057_00.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <button class="select-button" data-src="/static/clothes_samples/00057_00.png">Try</button>
-                        </div>
-                      </div>
-                </div>
-                <div class="w-100 d-none d-md-block"></div>
-                <div class="col-6 col-lg-4">
-                    <div class="card">
-                        <img src="/static/clothes_samples/00126_00.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <button class="select-button" data-src="/static/clothes_samples/00126_00.png">Try</button>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-6 col-lg-4">
-                    <div class="card">
-                        <img src="/static/clothes_samples/00135_00.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <button class="select-button" data-src="/static/clothes_samples/00135_00.png">Try</button>
-                        </div>
-                      </div>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><input type="search" id="search-bar" placeholder="Search..." oninput="searchGarments()"></li>
+            </ul>
+            <h1 id="headline_home">Virtual Try On</h1>
+        </nav>
+        <section class="fashion-section">
+            <img src="static/clothes_samples/fashion.jpg" alt="Fashion Image">
+            <div class="title-text">
+                <div class="headline_div">
+                <p class="text_home">Explore The Latest Styles For The Season...</p>
                 </div>
             </div>
-
+        </section>
+        <div class="container">
         </div>
-        <script src="/static/js/home_script.js"></script>
+        <footer class="footer">
+            <div>
+                <p>Contact Us: support@virtualtryon.com</p>
+                <p>Follow us on social media: 
+                    <a href="#">Facebook</a> | 
+                    <a href="#">Twitter</a> | 
+                    <a href="#">Instagram</a>
+                </p>
+            </div>
+        </footer>
+              
+        <script src="static/js/script_home.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     </body>
 </html>
+
+
