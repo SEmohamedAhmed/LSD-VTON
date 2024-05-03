@@ -6,6 +6,8 @@ The virtual tryon system is based on GP-VTON and LaDi-VTON
 
 We exploit the GP-VTON power in warping(LFGP) and the LaDi-VTON power in generation(Stable diffusion)
 
+Dataset: VITON-HD
+
 
 **Used Technologies/Apps:**
 - Python
@@ -34,7 +36,7 @@ Developed and maintained By (Order Does not matter):
 This section we will introduce our work (no code here) to test the
 **GP-VTON**, **LaDi-VTON** and **LSD-VTON** architectures but using new person/cloth images (which not included in the original dataset) i.e we will try-on our personal image and our clothes
 
-I called it **Mody Test** for my nickname!
+I called it **Mody Test**!
 
 For **Mody Test** (custom input) we only have (our inputs)
 - Person image
