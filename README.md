@@ -62,7 +62,8 @@ we do a preprocessing task which includes complicated tasks which are:
   year      = {2023},
 }
 ```
-```
+
+```bibtex
 @inproceedings{morelli2023ladi,
   title={{LaDI-VTON: Latent Diffusion Textual-Inversion Enhanced Virtual Try-On}},
   author={Morelli, Davide and Baldrati, Alberto and Cartella, Giuseppe and Cornia, Marcella and Bertini, Marco and Cucchiara, Rita},
