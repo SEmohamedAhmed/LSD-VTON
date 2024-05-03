@@ -49,7 +49,7 @@ For **Mody Test** (custom input) we only have (our inputs)
 and in **Mody Test**
 we do a preprocessing task which includes complicated tasks which are: 
 - Person parse (Human parse)
-- Person keypoints (skelton)
+- Person keypoints (skeleton)
 - Person densepose
 - Cloth parse
 - Cloth binary mask
