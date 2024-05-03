@@ -2,7 +2,7 @@
 **LSD-VTON** for **L**ocal Flow Global Parsing integrated with **S**table **D**iffusion Virtual Try-on
 
 ## **Introduction**
-The virtual tryon system is based on GP-VTON and LaDi VTON
+The virtual tryon system is based on GP-VTON and LaDi-VTON
 
 We exploit the GP-VTON power in warping(LFGP) and the LaDi-VTON power in generation(Stable diffusion)
 
