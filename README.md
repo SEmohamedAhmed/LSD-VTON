@@ -8,6 +8,10 @@ We exploit the GP-VTON power in warping(LFGP) and the LaDi-VTON power in generat
 
 Dataset: VITON-HD
 
+**LSD-VTON System Architecture**
+<div style="width: 100%; text-align: center;margin:auto">
+<img style="width:100%" src="LSD-VTON System Architecture.jpg">
+</div>
 
 **Used Technologies/Apps:**
 - Python
