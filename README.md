@@ -4,6 +4,9 @@
 ## **Introduction**
 The virtual tryon system is based on GP-VTON and LaDi VTON
 
+We exploit the GP-VTON power in warping(LFGP) and the LaDi-VTON power in generation(Stable diffusion)
+
+
 **Used Technologies/Apps:**
 - Python
 - FastAPI
