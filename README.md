@@ -8,6 +8,17 @@ We exploit the GP-VTON power in warping(LFGP) and the LaDi-VTON power in generat
 
 Dataset: VITON-HD
 
+## **Project Objective**
+- Create an e-commerce application that offers virtual try-on feature.
+- Deal with challenging inputs:
+  - Complex poses
+  - Complex garments
+  - Clothes style: tucked-in or tucked-out
+- Train the developed warping and generative models.
+- Evaluate the performance of the developed virtual try-on model against benchmarks.
+
+
+
 **LSD-VTON System Architecture**
 <div style="width: 100%; text-align: center;margin:auto">
 <img style="width:100%" src="LSD-VTON System Architecture.jpg">
