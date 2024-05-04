@@ -68,7 +68,7 @@ we do a preprocessing task which includes complicated tasks which are:
 <strong>Here is a spoiler image for our work (Mody Test)</strong>
 
 <div style="width: 100%; text-align: center;margin:auto">
-<img style="width:100%" src="LSD-VTON_ModyTest.jpg">
+<img style="width:100%" src="modyTryon.png">
 </div>
 
 ## **Citation**
