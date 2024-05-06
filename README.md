@@ -30,7 +30,7 @@ Dataset: VITON-HD
 - Kaggle API
 - SQL Server
 - HTML, CSS, JS
-- Kaggle (P100 GPU 16 GB VRAM, 16 GB RAM)
+- Kaggle (P100 GPU 16 GB VRAM, 30 GB RAM)
 - Pycharm IDE
 
 Developed and maintained By (Order Does not matter):
