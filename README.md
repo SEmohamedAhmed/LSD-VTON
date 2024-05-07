@@ -48,7 +48,7 @@ Developed and maintained By (Order Does not matter):
 
 
 ## **Mody Test**
-This section we will introduce our work (no code here) to test the
+In this section we will introduce our work (no code here) to test the
 **GP-VTON**, **LaDi-VTON** and **LSD-VTON** architectures but using new person/cloth images (which not included in the original dataset) i.e we will try-on our personal image and our clothes
 
 I called it **Mody Test**!
