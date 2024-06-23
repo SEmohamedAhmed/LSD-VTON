@@ -1,5 +1,5 @@
 # **Project Name**
-**LSD-VTON** for **L**ocal Flow Global Parsing integrated with **S**table **D**iffusion Virtual Try-on
+**LSD-VTON** for **L**ocal Flow Global Parsing Warping integrated with **S**table **D**iffusion Virtual Try-on
 
 # **Developed and maintained By (Order Does not matter):**
 
