@@ -1,6 +1,11 @@
 # **Project Name**
 **LSD-VTON** for **L**ocal Flow Global Parsing integrated with **S**table **D**iffusion Virtual Try-on
 
+# **Developed and maintained By (Order Does not matter):**
+
+[Mohamed Walid](https://github.com/MohamedWalidxX), [Karim Metwally](https://github.com/KarimMetwaly19), [Mohamed Mostafa](https://github.com/pmohmmed), [Mohamed Hesham](https://github.com/mohamedhesham840), [Omar Ehab](https://github.com/OmarEhab162), and [Mohamed Ahmed](https://github.com/SEmohamedAhmed)
+
+
 ## **Introduction**
 The virtual tryon system is based on GP-VTON and LaDi-VTON
 
@@ -33,14 +38,6 @@ Dataset: VITON-HD
 - Kaggle (P100 GPU 16 GB VRAM, 30 GB RAM)
 - Pycharm IDE
 
-Developed and maintained By (Order Does not matter):
-
-- [Mohamed Walid](https://github.com/MohamedWalidxX)
-- [Karim Metwally](https://github.com/KarimMetwaly19)
-- [Mohamed Mostafa](https://github.com/pmohmmed)
-- [Mohamed Hesham](https://github.com/mohamedhesham840)
-- [Omar Ehab](https://github.com/OmarEhab162)
-- [Mohamed Ahmed](https://github.com/SEmohamedAhmed)
 
 
 ## **Demo video**
